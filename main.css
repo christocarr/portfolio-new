@@ -452,7 +452,7 @@ header {
     grid-area: title;
   }
 
-  .section__subtitle {
+  .portfolio__item--subtitle {
     grid-area: subtitle;
     grid-column: 1 / -1;
     grid-row: 2;
