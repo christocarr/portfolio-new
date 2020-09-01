@@ -242,6 +242,8 @@ header {
 
 .intro {
   position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .intro-img {
@@ -253,13 +255,11 @@ header {
 @media (min-width: 600px) {
   .intro {
     display: grid;
-    width: min-content;
-    margin: 0 auto;
     grid-column-gap: 1em;
     grid-template-areas:
       'img title'
       'img subtitle';
-    grid-template-columns: min-content max-content;
+    grid-template-columns: 200px 1fr;
   }
 
   .intro-img {
