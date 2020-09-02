@@ -57,7 +57,7 @@ strong {
 }
 
 section {
-  padding: 2em;
+  padding: 3em;
 }
 
 .btn {
@@ -66,6 +66,7 @@ section {
   text-decoration: none;
   color: var(--clr-dark);
   padding: 0.5rem 1em;
+  margin-top: 1em;
   width: 10em;
   text-align: center;
   text-transform: uppercase;
@@ -474,6 +475,10 @@ header {
     width: 100%;
   }
 
+  .live__link, .github__link {
+    margin-top: 0;
+  }
+
   .portfolio__footer {
     position: absolute;
     bottom: 0;
@@ -484,6 +489,12 @@ header {
 @media (min-width: 800px) {
   .portfolio__item--section {
     grid-template-columns: 1fr 400px;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+  .buttons__container {
+    margin-top: 1em;
   }
 }
 
@@ -527,4 +538,14 @@ footer a {
 .footer__link:hover,
 .social-list__link:hover {
   opacity: 0.7;
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+
+  footer {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
