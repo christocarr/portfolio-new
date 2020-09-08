@@ -429,8 +429,13 @@ header {
 
 .buttons__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 2em;
+}
+
+.live__link, .github__link {
+  width: 6em;
+  padding: 0.5em 0.3em;
 }
 
 @media (min-width: 600px) {
@@ -475,8 +480,14 @@ header {
     width: 100%;
   }
 
+  .buttons__container {
+    justify-content: space-evenly;
+  }
+
   .live__link, .github__link {
     margin-top: 0;
+    width: 10em;
+    padding: 1em 0.5em;
   }
 
   .portfolio__footer {
