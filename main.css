@@ -14,6 +14,7 @@
   --clr-light: #ffffff;
   --clr-dark: #303030;
   --clr-accent: #a4ccff;
+  --instruction: #ec5a5a;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -129,6 +130,10 @@ h3 {
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   padding: 0.4em;
+}
+
+.instruction {
+  color: var(--instruction)
 }
 
 /* Header */
