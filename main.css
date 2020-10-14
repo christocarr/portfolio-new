@@ -48,6 +48,19 @@ body {
   line-height: 1.6;
 }
 
+/* to make footer stay at the bottom */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/*                                   */
+
 img {
   display: block;
   max-width: 100%;
@@ -242,7 +255,6 @@ header {
   right: 0;
   top: 8px;
 }
-
 
 /* Intro section */
 
@@ -495,11 +507,11 @@ header {
     padding: 1em 0.5em;
   }
 
-  .portfolio__footer {
+  /* .portfolio__footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
+  } */
 }
 
 @media (min-width: 800px) {
