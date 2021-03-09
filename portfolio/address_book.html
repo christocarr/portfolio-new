@@ -1,81 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description" content="Project page of Chris Carr portfolio website: SIBI Activity Search">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0ab723267b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../main.css">
-  <title>Chris Carr Portfolio</title>
-</head>
-<body class="portfolio__page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Project page of Chris Carr portfolio website: SIBI Activity Search"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0ab723267b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../main.css" />
+    <title>Chris Carr Portfolio</title>
+  </head>
+  <body class="portfolio__page">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="menu"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#about" class="nav__link">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="" alt="">
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="menu"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
-        <li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section>
-      <div class="portfolio__item--section">
-        <h1 class="section__title portfolio___item--heading">Address Book</h1>
-        <p class="section__subtitle portfolio__item--subtitle">personal project</p>
-        <div class="portfolio__item--body">
-          <p >A React create, read, update and delete (CRUD) app.</p>
-          <p>This app was built to teach myself Redux; the tiny but powerful state management library. 
-            By combining Redux with React allows React developers to easily manage state that is shared across components. This is especially true with trying to develop apps with complex application state. Redux can be used with any JavaScript framework or library even vanilla JS.</p>
+    <main>
+      <section>
+        <div class="portfolio__item--section">
+          <h1 class="section__title portfolio___item--heading">Address Book</h1>
+          <p class="section__subtitle portfolio__item--subtitle">
+            personal project
+          </p>
+          <div class="portfolio__item--body">
+            <p>A React create, read, update and delete (CRUD) app.</p>
+            <p>
+              This app was built to teach myself Redux; the tiny but powerful
+              state management library. By combining Redux with React allows
+              React developers to easily manage state that is shared across
+              components. This is especially true with trying to develop apps
+              with complex application state. Redux can be used with any
+              JavaScript framework or library even vanilla JS.
+            </p>
+          </div>
+          <img
+            src="../img/portfolio/address_book.jpg"
+            alt="website of SIBI activity search"
+            class="portfolio__item--img"
+          />
         </div>
-        <img src="../img/portfolio/address_book.jpg" alt="website of SIBI activity search" class="portfolio__item--img">
-      </div>
-      <div class="video__container">
-        <video controls loop class="portfolio__item--video">
-          <source src="../img/portfolio/media/address_book.mp4" type="video/mp4">
+        <div class="video__container">
+          <video controls loop class="portfolio__item--video">
+            <source
+              src="../img/portfolio/media/address_book.mp4"
+              type="video/mp4"
+            />
             Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-      <div class="buttons__container">
-        <a href="https://github.com/christocarr/react-address-book" class="btn" target="_blank" rel="noopener noreferrer">github</a>
-      </div>
-    </section>
-  </main>
+          </video>
+        </div>
+        <div class="buttons__container">
+          <a
+            href="https://github.com/christocarr/react-address-book"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github</a
+          >
+          <a
+            href="https://christocarr.github.io/react-address-book"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >live site</a
+          >
+        </div>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="portfolio__footer">
-    <a href="mailto:christocarr@outlook.com" class="footer__link">christocarr@outlook.com</a>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a href="#" class="social-list__link">
-          <i class="fab fa-github-square"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
+    <!-- Footer -->
+    <footer class="portfolio__footer">
+      <a href="mailto:christocarr@outlook.com" class="footer__link"
+        >christocarr@outlook.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-  <script src="../index.js"></script>
-</body>
+    <script src="../index.js"></script>
+  </body>
 </html>
