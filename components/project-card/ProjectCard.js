@@ -10,8 +10,6 @@ function ProjectCard({ fields }) {
       <div className={styles.card__image_container}>
         <Image
           src={`https:${screenshot.fields.file.url}`}
-          // width={screenshot.fields.file.details.image.width}
-          // height={screenshot.fields.file.details.image.height}
           layout="fill"
           objectFit="cover"
           alt={screenshot.fields.title}
