@@ -1,0 +1,15 @@
+.card__container {
+  width: 90%;
+  margin: 0 auto 1em auto;
+  border: lightgray 1px solid;
+}
+
+.card__image_container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.card__details_container {
+  padding: 1em;
+}

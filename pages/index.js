@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import Layout from '../components/layout/Layout';
 import ProjectCard from '../components/project-card/ProjectCard';
 import { getAllProjects } from '../lib/projects';
@@ -17,6 +15,7 @@ export default function Index({ allProjects }) {
   console.log(allProjects);
   return (
     <Layout>
+      <h2>About Me</h2>
       <h2>Projects</h2>
       <ul>
         {allProjects.map(({ fields, sys }) => (

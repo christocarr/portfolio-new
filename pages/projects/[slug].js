@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '../../components/layout/Layout';
 import { getAllProjects } from '../../lib/projects';
 
@@ -36,9 +38,12 @@ function Project({ project }) {
   return (
     <Layout>
       <Head>
-        <title>Project</title>
+        <title>Project - {name}</title>
       </Head>
       <h2>{name}</h2>
+      <Link href="/projects">
+        <a>&larr; Projects</a>
+      </Link>
     </Layout>
   );
 }
