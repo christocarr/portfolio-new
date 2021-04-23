@@ -15,15 +15,20 @@ export default function Index({ allProjects }) {
   console.log(allProjects);
   return (
     <Layout>
-      <h2>About Me</h2>
-      <h2>Projects</h2>
-      <ul>
-        {allProjects.map(({ fields, sys }) => (
-          <li key={sys.id}>
-            <ProjectCard fields={fields} />
-          </li>
-        ))}
-      </ul>
+      <section>
+        <h2>About Me</h2>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          {allProjects.map(({ fields, sys }) => (
+            <li key={sys.id}>
+              <ProjectCard fields={fields} />
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section></section>
     </Layout>
   );
 }
