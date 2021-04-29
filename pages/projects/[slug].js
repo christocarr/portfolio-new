@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../../components/layout/Layout';
 import { getAllProjects } from '../../lib/projects';
+import styles from './slug.module.css';
 
 export const getStaticPaths = async () => {
   const contentType = { content_type: 'project' };
@@ -34,13 +35,21 @@ export const getStaticProps = async ({ params }) => {
 
 function Project({ project }) {
   console.log(project);
-  const { name } = project.fields;
+  const { name, screenshot } = project.fields;
   return (
     <Layout>
       <Head>
         <title>Project - {name}</title>
       </Head>
       <h2>{name}</h2>
+      <div className={styles.card__container}>
+        <Image
+          src={`https:${screenshot.fields.file.url}`}
+          alt={name}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <Link href="/projects">
         <a>&larr; Projects</a>
       </Link>
