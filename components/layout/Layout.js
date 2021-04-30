@@ -1,5 +1,11 @@
+import Header from '../header/Header'
 function Layout({ children }) {
-  return <main>{children}</main>;
+  return (
+  <>
+  <Header />
+  <main>{children}</main>
+  </>
+  )
 }
 
 export default Layout;
